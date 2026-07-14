@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Web Personal | Universidad de Córdoba</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <style>
+    /* --- Estilos Generales --- */
+    html {
+      scroll-behavior: smooth; /* Hace la magia del scroll suave */
+      scroll-padding-top: 70px; /* Evita que el menú fijo tape el título de la sección al saltar */
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background-color: #fcfcfc;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #0f4c81; /* Azul corporativo/académico */
+      border-bottom: 2px solid #0f4c81;
+      padding-bottom: 8px;
+      margin-top: 0;
+    }
+
+    /* --- Menú de Navegación Fijo --- */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .navbar-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 10px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #555;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #0f4c81;
+    }
+
+    /* --- Contenedor Principal --- */
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 100px 20px 60px 20px; /* Margen superior para no quedar oculto bajo la navbar */
+    }
+
+    /* --- Sección de Cabecera (Perfil) --- */
+    .profile-header {
+      text-align: center;
+      padding: 40px 0;
+      margin-bottom: 40px;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      margin-bottom: 20px;
+      border: 3px solid #0f4c81;
+    }
+
+    .profile-name {
+      font-size: 2.2rem;
+      margin: 10px 0;
+      color: #222;
+    }
+
+    .profile-title {
+      font-size: 1.2rem;
+      color: #555;
+      font-weight: 500;
+      margin: 5px 0;
+    }
+
+    .profile-institution {
+      font-size: 1.1rem;
+      color: #777;
+      margin: 5px 0 25px 0;
+    }
+
+    /* --- Enlaces y Redes --- */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      color: #555;
+      font-size: 1.1rem;
+      padding: 8px 16px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .social-links a:hover {
+      background-color: #0f4c81;
+      color: #fff;
+      border-color: #0f4c81;
+    }
+
+    /* --- Secciones de Contenido --- */
+    .section {
+      padding: 50px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .section:last-child {
+      border-bottom: none;
+    }
+
+    /* --- Adaptabilidad Móvil --- */
+    @media (max-width: 768px) {
+      .navbar-container {
+        gap: 10px;
+        flex-wrap: wrap;
+        font-size: 0.85rem;
+      }
+      .profile-name {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#home">Home</a>
+      <a href="#bio">Short Bio</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#supervision">Supervision</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <header id="home" class="profile-header">
+      <img src="foto-2022.jpg" alt="Tu Nombre" class="profile-img">
+      
+      <h1 class="profile-name">Tu Nombre y Apellidos</h1>
+      <div class="profile-title">Assistant Professor (Profesor Ayudante Doctor)</div>
+      <div class="profile-institution">Universidad de Córdoba</div>
+
+      <div class="social-links">
+        <a href="mailto:agijon@uco.es"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://linkedin.com/in/tu-usuario" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/tu-usuario" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://scholar.google.com/citations?user=tu-id" target="_blank"><i class="ai ai-google-scholar"></i> Scholar</a>
+        <a href="https://www.webofscience.com/wos/author/record/tu-id" target="_blank"><i class="ai ai-researcherid"></i> ResearchID</a>
+        <a href="https://www.researchgate.net/profile/tu-usuario" target="_blank"><i class="ai ai-researchgate"></i> ResearchGate</a>
+      </div>
+    </header>
+
+    <section id="bio" class="section">
+      <h2>Short Bio</h2>
+      <p>Escribe aquí un resumen breve de tu trayectoria académica y tus principales intereses de investigación. Puedes destacar tu formación académica, áreas en las que te especializas y tu motivación profesional.</p>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <p>Detalla aquí tu experiencia profesional o académica previa de forma cronológica.</p>
+      <ul>
+        <li><strong>Puesto 1</strong> - Institución (Año - Presente)</li>
+        <li><strong>Puesto 2</strong> - Institución (Año - Año)</li>
+      </ul>
+    </section>
+
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <p>Aquí puedes organizar y listar tus principales contribuciones científicas (artículos de revista, capítulos de libro, actas de congresos...).</p>
+      <ul>
+        <li><strong>Título del artículo.</strong> Autores. <em>Nombre de la Revista</em>, Año.</li>
+        <li><strong>Título del artículo 2.</strong> Autores. <em>Nombre de la Revista</em>, Año.</li>
+      </ul>
+    </section>
+
+    <section id="teaching" class="section">
+      <h2>Teaching</h2>
+      <p>Describe las asignaturas o materias que impartes actualmente o has impartido en el pasado en la Universidad de Córdoba.</p>
+    </section>
+
+    <section id="supervision" class="section">
+      <h2>Supervision</h2>
+      <p>Utiliza este espacio para listar las tesis doctorales, trabajos de fin de máster (TFM) o trabajos de fin de grado (TFG) que estés dirigiendo o hayas dirigido.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Si deseas colaborar o ponerte en contacto conmigo, puedes encontrarme en:</p>
+      <p>
+        <i class="fas fa-map-marker-alt" style="color:#0f4c81;"></i> Departamento de [Tu Departamento]<br>
+        Universidad de Córdoba<br>
+        Córdoba, España
+      </p>
+    </section>
+
+  </div>
+
+</body>
+</html>
